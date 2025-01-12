@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="cabecalho" >
+        <a class="titulo__cabecalho">AluraGeek</a>
+
+        <div>
+            <img class="img--div" src="./assets/image 1.png" alt="tres corações">
+        </div>
+
+    </header>
+    
+    <main class="principal">
+        <section class="section__produtos">
+            <h1 class="titulo__produtos">Meus produtos</h1>
+            <div data-product class="products_container">
+            </div>
+
+            <div class="aviso-notificacao" data-notificacao>
+                <span class="aviso" id="notificacao"></span>
+            </div>
+            
+        </section>
+
+        <section class="section__adc">
+            <h1 class="titulo__adc">Adicionar produtos:</h1>
+            
+            <form class="form" data-form>
+                <div class="div-name">
+                    <input data-name type="text" class="nome" id="nome" placeholder="Nome...">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="div-price">
+                    <input data-price type="text" class="valor" id="valor" placeholder="Valor...">
+                    <span class="error-message" id="price-error"></span>
+                </div>
+
+                <div class="div-image">
+                    <input class="imagem" type="text" id="imagem" data-image placeholder="URL da imagem...">
+                    <span class="error-message" id="image-error"></span>
+                </div>
+
+                <div class="div-file">
+                    <label for="file-input"></label>
+                    <input class="selecionar" type="file" accept="image/*" id="file-input" data-file title="Selecionar imagem">
+                </div>
+                
+                <div class="div-botão">
+                    <span class="error-message-product" id="botao-error"></span>
+                    <div class="button">
+                        <button data-submit type="submit" class="btn__guardar" id="btnGuardar" value="Guardar">Guardar</button>
+                        <button data-reset type="reset" class="btn__limpar" id="btnLimpar" value="Limpar">Limpar</button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ft--div">
+            <a class="titulo__footer">AluraGeek</a>
+            <div class="img--footer">
+                <img class="img--div" src="./assets/image 1.png" alt="três corações">
+            </div>
+        </div> 
+            <p class="footer__sub">Desenvolvido por Mayara Rodrigues da Silva</p>
+            <p class="footer__sub__alura">ALURA LATAM 2024</p>
+    </footer>
+    <script type="module" src="/js/products.js"></script>
+</body>
+</html>
